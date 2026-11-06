@@ -1,9 +1,4 @@
-# Lab 1: Introduction to AI & Paradigms
-# Review = flag for a human reviewer, not an award decision.
-# All thresholds are synthetic lab assumptions, not real policy.
-
-# ---------- Part 1: symbolic rule vs probability threshold (Sec 1.5) ----------
-def symbolic(score, complete):
+def symbolic(score, complete)
     if complete and score >= 70:
         return "Review"
     return "Hold"
