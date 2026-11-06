@@ -1,6 +1,4 @@
 import math
-
-
 def minimax(depth, index, max_turn, scores, target_depth, leaves):
     if depth == target_depth:
         leaves[0] += 1
@@ -14,8 +12,6 @@ def minimax(depth, index, max_turn, scores, target_depth, leaves):
         minimax(depth + 1, index * 2, True, scores, target_depth, leaves),
         minimax(depth + 1, index * 2 + 1, True, scores, target_depth, leaves),
     )
-
-
 def alphabeta(depth, index, max_turn, scores, target_depth, alpha, beta, leaves):
     if depth == target_depth:
         leaves[0] += 1
